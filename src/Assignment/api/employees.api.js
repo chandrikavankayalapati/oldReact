@@ -1,0 +1,98 @@
+export const fetchEmployees = async () => {
+  return new Promise((resolve) => {
+    setTimeout(() => {
+      resolve([
+        {
+          id: "EMP001",
+          fullName: "John Doe",
+          gender: "Male",
+          dob: "1998-04-12",
+          state: "Telangana",
+          isActive: true,
+          profileImage: "https://ui-avatars.com/api/?name=John+Doe",
+        },
+        {
+          id: "EMP002",
+          fullName: "Priya Sharma",
+          gender: "Female",
+          dob: "1997-08-22",
+          state: "Karnataka",
+          isActive: true,
+          profileImage: "https://ui-avatars.com/api/?name=Priya+Sharma",
+        },
+        {
+          id: "EMP003",
+          fullName: "Rahul Verma",
+          gender: "Male",
+          dob: "1995-01-15",
+          state: "Maharashtra",
+          isActive: false,
+          profileImage: "https://ui-avatars.com/api/?name=Rahul+Verma",
+        },
+        {
+          id: "EMP004",
+          fullName: "Anita Singh",
+          gender: "Female",
+          dob: "1999-11-30",
+          state: "Delhi",
+          isActive: true,
+          profileImage: "https://ui-avatars.com/api/?name=Anita+Singh",
+        },
+        {
+          id: "EMP005",
+          fullName: "Suresh Kumar",
+          gender: "Male",
+          dob: "1996-06-18",
+          state: "Tamil Nadu",
+          isActive: true,
+          profileImage: "https://ui-avatars.com/api/?name=Suresh+Kumar",
+        },
+        {
+          id: "EMP006",
+          fullName: "Neha Patel",
+          gender: "Female",
+          dob: "1998-09-05",
+          state: "Gujarat",
+          isActive: false,
+          profileImage: "https://ui-avatars.com/api/?name=Neha+Patel",
+        },
+        {
+          id: "EMP007",
+          fullName: "Amit Roy",
+          gender: "Male",
+          dob: "1994-12-01",
+          state: "West Bengal",
+          isActive: true,
+          profileImage: "https://ui-avatars.com/api/?name=Amit+Roy",
+        },
+        {
+          id: "EMP008",
+          fullName: "Kavya Reddy",
+          gender: "Female",
+          dob: "2000-03-20",
+          state: "Telangana",
+          isActive: true,
+          profileImage: "https://ui-avatars.com/api/?name=Kavya+Reddy",
+        },
+        {
+          id: "EMP009",
+          fullName: "Manoj Singh",
+          gender: "Male",
+          dob: "1993-07-14",
+          state: "Rajasthan",
+          isActive: false,
+          profileImage: "https://ui-avatars.com/api/?name=Manoj+Singh",
+        },
+        {
+          id: "EMP010",
+          fullName: "Pooja Mehta",
+          gender: "Female",
+          dob: "1999-10-09",
+          state: "Madhya Pradesh",
+          isActive: true,
+          profileImage: "https://ui-avatars.com/api/?name=Pooja+Mehta",
+        },
+      ]);
+    }, 1000);
+  });
+};

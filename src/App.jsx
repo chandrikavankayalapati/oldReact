@@ -1,18 +1,20 @@
-import Navbar from "./NewsAPI/Navbar"
-import Newsboard from "./NewsAPI/Newsboard"
-import Newsitem from "./NewsAPI/Newsitem"
+import { Routes, Route } from "react-router-dom";
+import Login from "./Assignment/pages/Login";
+import Dashboard from "./Assignment/pages/Dashboard";
+import ProtectedRoute from "./Assignment/components/ProtectedRoute";
 
+const App = () => (
+  <Routes>
+    <Route path="/" element={<Login />} />
+    <Route
+      path="/dashboard"
+      element={
+        <ProtectedRoute>
+          <Dashboard />
+        </ProtectedRoute>
+      }
+    />
+  </Routes>
+);
 
-
-function App() {
-  return(
-    <div>
-       <Navbar/>
-       <Newsboard/>
-       {/* <Newsitem/> */}
-    </div>
-   
-  )
-}
-
-export default App
+export default App;

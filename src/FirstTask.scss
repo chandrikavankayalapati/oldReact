@@ -1,0 +1,54 @@
+// 1️⃣ Variables
+$primary-color: #2563eb;
+$text-color: #333;
+$bg-color: #f3f4f6;
+$radius: 8px;
+
+// 2️⃣ Mixin (Center content)
+@mixin center {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+// 3️⃣ Page styling
+body {
+  @include center;
+  height: 100vh;
+  background-color: $bg-color;
+  margin: 0;
+  font-family: Arial, sans-serif;
+}
+
+// 4️⃣ Card component
+.card {
+  background: white;
+  padding: 20px;
+  width: 300px;
+  border-radius: $radius;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  text-align: center;
+
+  h2 {
+    color: $primary-color;
+    margin-bottom: 10px;
+  }
+
+  p {
+    color: $text-color;
+    margin-bottom: 16px;
+  }
+
+  button {
+    background-color: $primary-color;
+    color: white;
+    border: none;
+    padding: 8px 16px;
+    border-radius: $radius;
+    cursor: pointer;
+
+    &:hover {
+      background-color: darken($primary-color, 10%);
+    }
+  }
+}

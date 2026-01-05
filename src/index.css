@@ -1,14 +1,42 @@
-
-@import url('https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&family=Roboto+Condensed:ital,wght@0,100..900;1,100..900&display=swap');
-
-@import url('https://fonts.googleapis.com/css2?family=Great+Vibes&display=swap');
-
-
 @import "tailwindcss";
 
-
 @layer base {
-    html{
-        font-family: 'Raleway',sans-serif;
-    }
+  html {
+    font-family: system-ui, sans-serif;
+  }
 }
+body {
+  background-color: red;
+}
+ /* for print task  */
+
+ 
+@media print {
+  body * {
+    visibility: hidden;
+  }
+
+  table,
+  table * {
+    visibility: visible;
+  }
+
+  table {
+    position: absolute;
+    left: 0;
+    top: 0;
+    width: 100%;
+  }
+
+  /* Hide toggle in print */
+  .status-toggle {
+    display: none !important;
+  }
+
+  /* Show text status in print */
+  .status-text {
+    display: inline !important;
+    font-weight: bold;
+  }
+}
+
